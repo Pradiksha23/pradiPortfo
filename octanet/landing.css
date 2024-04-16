@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css? family=Poppins:200,300,400,500,600,700,800,900&dispaly=Swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+section{
+    background: url(3d.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.eg
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:url(profile.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    border-bottom: 100px;
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:20px 100px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo
+{
+    position: relative;
+    max-width: 80px;
+    color: white;
+}
+header ul
+{
+    position:relative ;
+    display: flex;
+}
+header ul li
+{
+    list-style: none;
+}
+header ul li a
+{
+    display:inline-block;
+    color:white;
+    font-weight:400;
+    margin-left:40px;
+    text-decoration: none;
+}
+header ul li a:hover{
+    color: crimson;
+    transition:0.3s;
+}
+header ul li a:active
+{
+    color:lightblue;
+    border:3px solid aliceblue;
+    border-radius: 20px;
+}
+.content
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textBox
+{
+    position:relative ;
+    max-width: 600px;
+}
+.content .textBox h2{
+    color: white;
+    font-size:4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.content .textBox h2 i{
+    color:crimson;
+    font-size: 1em;
+    font-weight: 900;
+}
+.content .textBox a
+{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background:lightskyblue;
+    color:#fff;
+    border-radius: 40px;
+    font-weight:500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: transform .4s;
+}
+.content .textBox a:hover{
+    transform: scale(1.2);
+}
+.content .imgBox
+{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+.content .imgBox img{
+    max-width:340px;
+}
+
+.imgBox img{
+    border-radius:50%;
+    box-shadow: 0 2px 40px 0 crimson;
+    border: 2px dashed crimson;
+}
+.circle
+{
+    position:absolute;
+    bottom: 0;
+    right:0;
+    width:100%;
+    height: 100%;
+    justify-content: center;
+    background:none;
+    clip-path: circle(100px at right );
+}
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about img{
+    height: auto;
+    width: 430px;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width:1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: url(design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 8px 32px 0 rgba( 0,0,0,1);
+    box-shadow: 0 2px 40px 0 lightblue;
+    border-left: 1px solid rgba(255,255,255,.3);
+    border-top: 1px solid rgba(255,255,255,.3)
+}
+.about-text h2{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.about-text h5{
+    color:crimson;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    font-size: 26px;
+    text-transform: capitalize;
+}
+.about-text p{
+    color:lightskyblue;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+.service{
+    width: 100%;
+    padding: 100px 0px;
+    background:url(pakka.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title h2{
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card
+{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background:rgb(16, 67, 116);
+    box-shadow: 0 8px 32px 0 rgba( 0,0,0,1);
+    border-left: 1px solid rgb(4, 14, 17);
+    border-top: 1px solid rgb(9, 21, 26);
+    box-shadow:  1px 2px 0 crimson;
+}
+.card:hover{
+    transform:scale(1.1);
+    box-shadow: 2px 2px 2px black;
+    transition: 0.8s;
+    z-index: 2;
+}
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: crimson;
+}
+h5{
+    color:crimson;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+.pra p{
+    color: lightblue;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 30px;
+}
+.card .button{
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid crimson;
+    cursor: pointer;
+}
+.contact-me{
+    width: 100%;
+    height: 290px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: url(3d.jpg);
+}
+.contact-me p{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.contact-me .button-two{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.contact-me .button-two:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.social{
+    display: flex;
+}
+.social i{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9004d;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+}
+.social i:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
+.end{
+    position: absolute;
+    color: #f9004d;
+    bottom: 35px;
+    font-size: 16px;
+}
